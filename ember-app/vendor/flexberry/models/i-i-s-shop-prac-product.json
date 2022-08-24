@@ -1,0 +1,159 @@
+﻿{
+  "name": "IISShopPracProduct",
+  "modelName": "i-i-s-shop-prac-product",
+  "className": "Product",
+  "nameSpace": "IIS.ShopPrac",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "productCode",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": true,
+      "defaultValue": "1",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "measure",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "price",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "weight",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ProductE",
+      "modelName": "i-i-s-shop-prac-product",
+      "attrs": [
+        {
+          "name": "productCode",
+          "caption": "Product code",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "measure",
+          "caption": "Measure",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "description",
+          "caption": "Description",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "price",
+          "caption": "Price",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "weight",
+          "caption": "Weight",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ProductL",
+      "modelName": "i-i-s-shop-prac-product",
+      "attrs": [
+        {
+          "name": "productCode",
+          "caption": "Product code",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "measure",
+          "caption": "Measure",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "description",
+          "caption": "Description",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "price",
+          "caption": "Price",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "weight",
+          "caption": "Weight",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

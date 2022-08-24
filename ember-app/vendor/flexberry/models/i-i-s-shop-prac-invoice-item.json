@@ -1,0 +1,122 @@
+﻿{
+  "name": "IISShopPracInvoiceItem",
+  "modelName": "i-i-s-shop-prac-invoice-item",
+  "className": "InvoiceItem",
+  "nameSpace": "IIS.ShopPrac",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "amount",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "weight",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "price",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "totalSum",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": false,
+      "name": "product",
+      "relatedTo": "i-i-s-shop-prac-product",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "invoice",
+      "relatedTo": "i-i-s-shop-prac-invoice",
+      "inverse": "invoiceItem"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "InvoiceItemE",
+      "modelName": "i-i-s-shop-prac-invoice-item",
+      "attrs": [
+        {
+          "name": "amount",
+          "caption": "Amount",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "weight",
+          "caption": "Weight",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "price",
+          "caption": "Price",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "totalSum",
+          "caption": "Total sum",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Name",
+          "lookupValueField": "name",
+          "relationName": "Product",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": true,
+              "index": 5
+            }
+          ],
+          "index": 4,
+          "type": "standard",
+          "caption": "Product",
+          "name": "product",
+          "relatedTo": "i-i-s-shop-prac-product",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-shop-prac-invoice-e",
+  "editForm": "i-i-s-shop-prac-invoice-e",
+  "external": false,
+  "caption": "Накладные",
+  "name": "IISShopPracInvoiceL",
+  "className": "InvoiceL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-shop-prac-invoice",
+      "modelProjection": "InvoiceL"
+    }
+  ]
+}

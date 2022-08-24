@@ -1,0 +1,107 @@
+﻿{
+  "name": "IISShopPracOrderItem",
+  "modelName": "i-i-s-shop-prac-order-item",
+  "className": "OrderItem",
+  "nameSpace": "IIS.ShopPrac",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "amount",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "priceWTaxes",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "totalSum",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": false,
+      "name": "product",
+      "relatedTo": "i-i-s-shop-prac-product",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "order",
+      "relatedTo": "i-i-s-shop-prac-order",
+      "inverse": "orderItem"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "OrderItemE",
+      "modelName": "i-i-s-shop-prac-order-item",
+      "attrs": [
+        {
+          "name": "amount",
+          "caption": "Amount",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "priceWTaxes",
+          "caption": "Price w taxes",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "totalSum",
+          "caption": "Total sum",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Name",
+          "lookupValueField": "name",
+          "relationName": "Product",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Product",
+          "name": "product",
+          "relatedTo": "i-i-s-shop-prac-product",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

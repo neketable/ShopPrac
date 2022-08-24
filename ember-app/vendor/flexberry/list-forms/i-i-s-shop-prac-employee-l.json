@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-shop-prac-employee-e",
+  "editForm": "i-i-s-shop-prac-employee-e",
+  "external": false,
+  "caption": "Сотрудники",
+  "name": "IISShopPracEmployeeL",
+  "className": "EmployeeL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-shop-prac-employee",
+      "modelProjection": "EmployeeL"
+    }
+  ]
+}

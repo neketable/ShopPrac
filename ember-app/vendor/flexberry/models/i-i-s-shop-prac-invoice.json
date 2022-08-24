@@ -1,0 +1,298 @@
+﻿{
+  "name": "IISShopPracInvoice",
+  "modelName": "i-i-s-shop-prac-invoice",
+  "className": "Invoice",
+  "nameSpace": "IIS.ShopPrac",
+  "parentModelName": "i-i-s-shop-prac-document",
+  "parentClassName": "Document",
+  "attrs": [
+    {
+      "name": "status",
+      "type": "i-i-s-shop-prac-invoice-status",
+      "flexberryType": "InvoiceStatus",
+      "notNull": false,
+      "defaultValue": "New",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "shipmentDateTime",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "totalSum",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "totalWeight",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "note",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "customerName",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": false,
+      "name": "order",
+      "relatedTo": "i-i-s-shop-prac-order",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": false,
+      "name": "responsiblePerson",
+      "relatedTo": "i-i-s-shop-prac-employee",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "invoiceItem",
+      "relatedTo": "i-i-s-shop-prac-invoice-item",
+      "inverse": "invoice"
+    }
+  ],
+  "projections": [
+    {
+      "name": "InvoiceE",
+      "modelName": "i-i-s-shop-prac-invoice",
+      "attrs": [
+        {
+          "name": "status",
+          "caption": "Status",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "shipmentDateTime",
+          "caption": "Shipment date time",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "totalSum",
+          "caption": "Total sum",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "totalWeight",
+          "caption": "Total weight",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "note",
+          "caption": "Note",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "customerName",
+          "caption": "Customer name",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "number",
+          "caption": "Number",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "createDate",
+          "caption": "Create date",
+          "hidden": false,
+          "index": 7
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Number",
+          "lookupValueField": "number",
+          "relationName": "Order",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "number",
+              "caption": "",
+              "hidden": false,
+              "index": 9
+            }
+          ],
+          "index": 8,
+          "type": "standard",
+          "caption": "Order",
+          "name": "order",
+          "relatedTo": "i-i-s-shop-prac-order",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ResponsiblePerson",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "lastName",
+              "caption": "Last name",
+              "hidden": true,
+              "index": 11
+            }
+          ],
+          "index": 10,
+          "type": "default",
+          "caption": "Responsible person",
+          "name": "responsiblePerson",
+          "relatedTo": "i-i-s-shop-prac-employee",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "InvoiceItemE",
+          "caption": "Invoice item",
+          "name": "invoiceItem",
+          "relatedTo": "i-i-s-shop-prac-invoice-item",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "InvoiceL",
+      "modelName": "i-i-s-shop-prac-invoice",
+      "attrs": [
+        {
+          "name": "number",
+          "caption": "Number",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "status",
+          "caption": "Status",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "createDate",
+          "caption": "Create date",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "customerName",
+          "caption": "Customer name",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "totalSum",
+          "caption": "Total sum",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "totalWeight",
+          "caption": "Total weight",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "note",
+          "caption": "Note",
+          "hidden": false,
+          "index": 7
+        },
+        {
+          "name": "shipmentDateTime",
+          "caption": "Shipment date time",
+          "hidden": false,
+          "index": 8
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Order",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "number",
+              "caption": "Номер заказа",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Номер заказа",
+          "name": "order",
+          "relatedTo": "i-i-s-shop-prac-order",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ResponsiblePerson",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "lastName",
+              "caption": "Last name",
+              "hidden": false,
+              "index": 9
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Last name",
+          "name": "responsiblePerson",
+          "relatedTo": "i-i-s-shop-prac-employee",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

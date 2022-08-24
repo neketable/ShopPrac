@@ -1,0 +1,526 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ShopPrac.Objects</name>
+    </assembly>
+    <members>
+        <member name="T:IIS.ShopPrac.Employee">
+            <summary>
+            Сотрудник.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Employee.Number">
+            <summary>
+            Number.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Employee.LastName">
+            <summary>
+            LastName.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Employee.FirstName">
+            <summary>
+            FirstName.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Employee.MiddleName">
+            <summary>
+            MiddleName.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Employee.PhoneNumber">
+            <summary>
+            PhoneNumber.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Employee.Email">
+            <summary>
+            Email.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Employee.Position">
+            <summary>
+            Position.
+            </summary>
+        </member>
+        <member name="T:IIS.ShopPrac.Employee.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Employee.Views.EmployeeE">
+            <summary>
+            "EmployeeE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Employee.Views.EmployeeL">
+            <summary>
+            "EmployeeL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.ShopPrac.PositionList">
+            <summary>
+            Position list.
+            </summary>
+        </member>
+        <member name="F:IIS.ShopPrac.PositionList.Storekeeper">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.ShopPrac.PositionList.Manager">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:IIS.ShopPrac.Document">
+            <summary>
+            Документ.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Document.Number">
+            <summary>
+            Number.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Document.CreateDate">
+            <summary>
+            CreateDate.
+            </summary>
+        </member>
+        <member name="T:IIS.ShopPrac.Document.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Document.Views.DocumentE">
+            <summary>
+            "DocumentE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Document.Views.DocumentL">
+            <summary>
+            "DocumentL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.ShopPrac.Storehouse">
+            <summary>
+            Склад.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Storehouse.Number">
+            <summary>
+            Number.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Storehouse.Address">
+            <summary>
+            Address.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Storehouse.Storekeeper">
+            <summary>
+            Склад.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Storehouse.StoreProduct">
+            <summary>
+            Склад.
+            </summary>
+        </member>
+        <member name="T:IIS.ShopPrac.Storehouse.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Storehouse.Views.StorehouseE">
+            <summary>
+            "StorehouseE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Storehouse.Views.StorehouseL">
+            <summary>
+            "StorehouseL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.ShopPrac.Invoice">
+            <summary>
+            Накладная.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Invoice.Status">
+            <summary>
+            Status.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Invoice.ShipmentDateTime">
+            <summary>
+            ShipmentDateTime.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Invoice.TotalSum">
+            <summary>
+            TotalSum.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Invoice.TotalWeight">
+            <summary>
+            TotalWeight.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Invoice.Note">
+            <summary>
+            Note.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Invoice.CustomerName">
+            <summary>
+            CustomerName.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Invoice.Order">
+            <summary>
+            Накладная.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Invoice.ResponsiblePerson">
+            <summary>
+            Накладная.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Invoice.InvoiceItem">
+            <summary>
+            Накладная.
+            </summary>
+        </member>
+        <member name="T:IIS.ShopPrac.Invoice.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Invoice.Views.InvoiceE">
+            <summary>
+            "InvoiceE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Invoice.Views.InvoiceL">
+            <summary>
+            "InvoiceL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.ShopPrac.Order">
+            <summary>
+            Заказ.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Order.Status">
+            <summary>
+            Status.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Order.ShipmentDate">
+            <summary>
+            ShipmentDate.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Order.PaymentDate">
+            <summary>
+            PaymentDate.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Order.TotalSum">
+            <summary>
+            TotalSum.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Order.Manager">
+            <summary>
+            Заказ.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Order.OrderItem">
+            <summary>
+            Заказ.
+            </summary>
+        </member>
+        <member name="T:IIS.ShopPrac.Order.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Order.Views.OrderE">
+            <summary>
+            "OrderE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Order.Views.OrderL">
+            <summary>
+            "OrderL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.ShopPrac.Product">
+            <summary>
+            Товар.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Product.ProductCode">
+            <summary>
+            ProductCode.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Product.Name">
+            <summary>
+            Name.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Product.Measure">
+            <summary>
+            Measure.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Product.Description">
+            <summary>
+            Description.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Product.Price">
+            <summary>
+            Price.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Product.Weight">
+            <summary>
+            Weight.
+            </summary>
+        </member>
+        <member name="T:IIS.ShopPrac.Product.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Product.Views.ProductE">
+            <summary>
+            "ProductE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.Product.Views.ProductL">
+            <summary>
+            "ProductL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.ShopPrac.InvoiceItem">
+            <summary>
+            ЗаписьВНакладной.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.InvoiceItem.Amount">
+            <summary>
+            Amount.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.InvoiceItem.Weight">
+            <summary>
+            Weight.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.InvoiceItem.Price">
+            <summary>
+            Price.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.InvoiceItem.TotalSum">
+            <summary>
+            TotalSum.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.InvoiceItem.Product">
+            <summary>
+            ЗаписьВНакладной.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.InvoiceItem.Invoice">
+            <summary>
+            мастеровая ссылка на шапку IIS.ShopPrac.Invoice.
+            </summary>
+        </member>
+        <member name="T:IIS.ShopPrac.InvoiceItem.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.InvoiceItem.Views.InvoiceItemE">
+            <summary>
+            "InvoiceItemE" view.
+            </summary>
+        </member>
+        <member name="T:IIS.ShopPrac.DetailArrayOfInvoiceItem">
+            <summary>
+            Detail array of InvoiceItem.
+            </summary>
+        </member>
+        <member name="M:IIS.ShopPrac.DetailArrayOfInvoiceItem.#ctor(IIS.ShopPrac.Invoice)">
+            <summary>
+            Construct detail array.
+            </summary>
+            <summary>
+            Returns object with type InvoiceItem by index.
+            </summary>
+            <summary>
+            Adds object with type InvoiceItem.
+            </summary>
+        </member>
+        <member name="T:IIS.ShopPrac.InvoiceStatus">
+            <summary>
+            СостояниеНакладной.
+            </summary>
+        </member>
+        <member name="F:IIS.ShopPrac.InvoiceStatus.New">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.ShopPrac.InvoiceStatus.Issued">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.ShopPrac.InvoiceStatus.Paused">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.ShopPrac.InvoiceStatus.Ready">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.ShopPrac.InvoiceStatus.Shipped">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:IIS.ShopPrac.StoreProduct">
+            <summary>
+            ТоварНаСкладе.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.StoreProduct.Amount">
+            <summary>
+            Amount.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.StoreProduct.Product">
+            <summary>
+            ТоварНаСкладе.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.StoreProduct.Storehouse">
+            <summary>
+            мастеровая ссылка на шапку IIS.ShopPrac.Storehouse.
+            </summary>
+        </member>
+        <member name="T:IIS.ShopPrac.StoreProduct.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.StoreProduct.Views.StoreProductE">
+            <summary>
+            "StoreProductE" view.
+            </summary>
+        </member>
+        <member name="T:IIS.ShopPrac.DetailArrayOfStoreProduct">
+            <summary>
+            Detail array of StoreProduct.
+            </summary>
+        </member>
+        <member name="M:IIS.ShopPrac.DetailArrayOfStoreProduct.#ctor(IIS.ShopPrac.Storehouse)">
+            <summary>
+            Construct detail array.
+            </summary>
+            <summary>
+            Returns object with type StoreProduct by index.
+            </summary>
+            <summary>
+            Adds object with type StoreProduct.
+            </summary>
+        </member>
+        <member name="T:IIS.ShopPrac.OrderItem">
+            <summary>
+            СтрокаЗаказа.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.OrderItem.Amount">
+            <summary>
+            Amount.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.OrderItem.PriceWTaxes">
+            <summary>
+            PriceWTaxes.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.OrderItem.TotalSum">
+            <summary>
+            TotalSum.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.OrderItem.Product">
+            <summary>
+            СтрокаЗаказа.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.OrderItem.Order">
+            <summary>
+            мастеровая ссылка на шапку IIS.ShopPrac.Order.
+            </summary>
+        </member>
+        <member name="T:IIS.ShopPrac.OrderItem.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.ShopPrac.OrderItem.Views.OrderItemE">
+            <summary>
+            "OrderItemE" view.
+            </summary>
+        </member>
+        <member name="T:IIS.ShopPrac.DetailArrayOfOrderItem">
+            <summary>
+            Detail array of OrderItem.
+            </summary>
+        </member>
+        <member name="M:IIS.ShopPrac.DetailArrayOfOrderItem.#ctor(IIS.ShopPrac.Order)">
+            <summary>
+            Construct detail array.
+            </summary>
+            <summary>
+            Returns object with type OrderItem by index.
+            </summary>
+            <summary>
+            Adds object with type OrderItem.
+            </summary>
+        </member>
+        <member name="T:IIS.ShopPrac.OrderStatus">
+            <summary>
+            СостояниеЗаказа.
+            </summary>
+        </member>
+        <member name="F:IIS.ShopPrac.OrderStatus.New">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.ShopPrac.OrderStatus.Paid">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.ShopPrac.OrderStatus.Cancelled">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>
